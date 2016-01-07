@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "iClap"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "将你的APP包上传到iClap，在APP内进行产品管理和场景化协作。"
   s.description  = <<-DESC
                    iClap的主要功能：
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     }
   s.author            = { "iClap" => "lofter2011@qq.com" }
   s.platform          = :ios, '7.0'
-  s.source            = { :git => "https://github.com/lofter2011/iClap-iOS.git", :tag => s.version.to_s }
+  s.source            = { :git => "https://github.com/lofter2011/iClap-iOS.git", :tag => 1.0.0 }
   s.source_files      = 'iClapSDK.framework/Headers/*.{h}'
   s.resources         = 'DevTongXieAppRes.bundle', 'DevTongXieComment.bundle'
   s.preserve_paths    = 'iClapSDK.framework/*', 'DevTongXieAppRes.bundle', 'DevTongXieComment.bundle'
