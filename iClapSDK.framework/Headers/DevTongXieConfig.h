@@ -16,7 +16,8 @@ typedef NS_ENUM (NSInteger, DevPlatformType)
     Platform_Type_Application = Platform_Type_Default,// 普通应用App
     Platform_Type_Unity3d     = 1 << 2,// 基于Unity3d开发的App
     Platform_Type_Cocos2d     = 1 << 3 ,// 基于Cocos2d开发的App
-    Platform_Type_Cocos2dx    = 1 << 4// 基于Cocos2dx开发的App
+    Platform_Type_Cocos2dx    = 1 << 4,// 基于Cocos2dx开发的App
+    Platform_Type_Sprite      = 1 << 5//
 };
 
 @interface DevTongXieConfig : NSObject
@@ -68,7 +69,7 @@ typedef NS_ENUM (NSInteger, DevPlatformType)
 - (void)initIClapSDKWithAppkey:(NSString *)appkeyStr secret:(NSString *)secretStr hookType:(DevPlatformType)platformType;
 
 - (void)devRegisterForRemoteNotifications;
-
+- (void)devRegisterForRemoteNotifications2;
 /**
  *  向iClap推送服务器提交device token注册请求，只有在注册deviceToken后才可以绑定
  *
@@ -91,5 +92,7 @@ typedef NS_ENUM (NSInteger, DevPlatformType)
 - (void)devDidReceiveRemoteNotification:(NSDictionary *)userInfo;
 
 - (void)testNotification:(NSInteger)type aboudData:(NSString *)aboutData;
+
+- (void)hlApplication:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification;
 
 @end
