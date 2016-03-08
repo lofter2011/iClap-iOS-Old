@@ -28,8 +28,9 @@ Pod::Spec.new do |s|
   s.source_files      = 'iClapSDK.framework/Headers/*.{h}'
   s.resources         = 'DevTongXieAppRes.bundle', 'DevTongXieComment.bundle'
   s.preserve_paths    = 'iClapSDK.framework/*', 'DevTongXieAppRes.bundle', 'DevTongXieComment.bundle'
-  s.frameworks        = 'UIKit', 'ImageIO', 'AVFoundation', 'SystemConfiguration', 'CoreLocation', 'Security', 'CFNetwork', 'libsqlite3', 'libstdc++', 'libz', 'iClapSDK'
-  s.xcconfig          =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/iClap/"' }
+  s.frameworks        = 'UIKit', 'ImageIO', 'AVFoundation', 'SystemConfiguration', 'CoreLocation', 'Security', 'CFNetwork', 'iClapSDK'
+  s.libraries = 'sqlite3', 'z', 'stdc++'
+  s.xcconfig          =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/iClap/"', 'OTHER_LDFLAGS' => '-ObjC' }
   s.requires_arc      = true
 
 end
