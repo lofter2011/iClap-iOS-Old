@@ -1,6 +1,0 @@
-framework module iClapSdk {
-  umbrella header "iClapSdk.h"
-
-  export *
-  module * { export * }
-}
