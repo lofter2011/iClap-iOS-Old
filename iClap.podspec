@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "iClap"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "将你的APP包上传到iClap，在APP内进行产品管理和场景化协作。"
   s.description  = <<-DESC
                    iClap的主要功能：
