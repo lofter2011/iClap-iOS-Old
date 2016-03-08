@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "iClap"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "将你的APP包上传到iClap，在APP内进行产品管理和场景化协作。"
   s.description  = <<-DESC
                    iClap的主要功能：
@@ -28,8 +28,8 @@ Pod::Spec.new do |s|
   s.source_files      = 'iClapSDK.framework/Headers/*.{h}'
   s.resources         = 'DevTongXieAppRes.bundle', 'DevTongXieComment.bundle'
   s.preserve_paths    = 'iClapSDK.framework/*', 'DevTongXieAppRes.bundle', 'DevTongXieComment.bundle'
-  s.frameworks        = 'UIKit', 'ImageIO', 'AVFoundation', 'SystemConfiguration', 'CoreLocation', 'Security', 'CFNetwork', 'iClapSDK'
-  s.xcconfig          =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/iClapSDK/"' }
+  s.frameworks        = 'UIKit', 'ImageIO', 'AVFoundation', 'SystemConfiguration', 'CoreLocation', 'Security', 'CFNetwork', 'libsqlite3', 'libstdc++', 'libz', 'iClapSDK'
+  s.xcconfig          =  { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/iClap/"' }
   s.requires_arc      = true
 
 end
