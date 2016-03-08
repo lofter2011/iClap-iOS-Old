@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
     }
   s.author            = { "iClap" => "lofter2011@qq.com" }
   s.platform          = :ios, '7.0'
-  s.source            = { :git => "https://github.com/lofter2011/iClap-iOS.git", :tag => s.version.to_s }
+  s.source            = { :git => "https://github.com/lofter2011/iClap-iOS.git", :tag => "1.2.0" }
   s.source_files      = 'iClapSDK.framework/Headers/*.{h}'
   s.resources         = 'DevTongXieAppRes.bundle', 'DevTongXieComment.bundle'
   s.preserve_paths    = 'iClapSDK.framework/*', 'DevTongXieAppRes.bundle', 'DevTongXieComment.bundle'
